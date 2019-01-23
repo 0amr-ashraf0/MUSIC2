@@ -34,11 +34,10 @@ const client = new Discord.Client({disableEveryone: true});
 
 const request = require('request');
 
-const prefix = '2'
+const prefix = 'A'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-	client.user.setGame(`2play | Florida Server`,'https://www.twitch.tv/v5bz');
 });
 
 var servers = [];
@@ -134,7 +133,7 @@ client.on('message', function(message) {
 
                         .setColor("#RANDOM")
 
-                        .setFooter('' + message.author.tag)
+                        .setFooter('Requsted By : ' + message.author.tag)
 
                         .setImage(videoInfo.thumbnailUrl)
 
